@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@400;500;600;700;800;900&family=Spartan&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box; 
+}
+
+/* navbar */
+
+#nav .container{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.507);
+    padding: 0.1vw 3vw;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.container .logo{
+    margin-top: 0.4vw;
+    justify-content:left;
+}
+
+.nav-esport{
+    font-weight: bold;
+}
+
+.logo img{
+    width: 10vw;
+}
+
+.container .nav-content{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4vw;
+}
+
+.container .nav-content a{
+  text-decoration: none;
+  color: white;
+  font-family: 'Spartan';
+  font-size: 1.2vw;
+}
+
+.nav-content .register{
+    display:flex; 
+    flex-direction: row;
+    align-items:center; 
+}
+
+.container .register a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Spartan';
+    font-size: 1.2vw;
+    margin-right: 0.7vw;
+}
+
+.container .register img{
+    width: 3vw;
+}
+
+.nav-content a:hover{
+    color: rgb(199, 199, 199);
+    outline-style: none;
+    transition: all .2s linear;
+}
+
+/* landing page */
+
+#landing-page{
+    display: flex;
+    flex-direction: column;
+}
+
+#landing-page img{
+    width: 100%;
+}
+
+#landing-page .image{
+    display: flex;
+    flex-direction: row;
+}
+
+#landing-page .image img{
+    width: 20vw;
+}
+
+/* schedule */
+
+#schedule{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins';
+    color: white;
+}
+
+#schedule img{
+    width: 100%;
+}
+
+#schedule .schedule-content{
+    display: flex;
+    flex-direction: column;
+    gap: 7vh;
+    position: absolute;
+}
+
+#schedule .schedule-content h1{
+    font-size: 8vw;
+    text-shadow: black 0px 8px 15px;
+}
+
+.schedule-content .schedule-box{
+    display: flex;
+    flex-direction: row;
+    padding: 2vw 2vw;
+    background-color: rgba(0, 0, 0, 0.541);
+    box-shadow: black 8px 12px 12px;
+    border-radius: 64px;
+    justify-content: center;
+    align-items: center;
+    text-align: center  ;
+    gap: 7vw;
+}
+
+.schedule-box .logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1vh;
+}
+
+.schedule-box:hover{
+    cursor: pointer;
+    background-color: black;
+    transition: .2s linear;
+}
+
+#schedule .schedule-box h1{
+    font-size: 7vw;
+}
+
+#schedule .schedule-box p{
+    font-size: 1vw;
+}
+
+#schedule .schedule-box .logo img{
+    width: 7vw;
+}
+
+#schedule .schedule-box .logo .flag img{
+    width: 3vw;
+}
+
+@media screen and (max-width : 800px) {
+    #schedule .schedule-content{
+        display: flex;
+        flex-direction: column;
+        gap: 3vh;
+    }
+    .schedule-content .schedule-box{
+        padding: 1vw 1vw;
+    }
+
+}
+
+/* footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer img{
+    width: 100%;
+}
+
+footer .container{
+    position: absolute;
+}
+
+footer .container .logo{
+    text-align: center;
+}
+
+footer .container p{
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 1vw;
+    color: white;
+    text-shadow: 0px 4px 14px black;
+}
+
+/* modal */
+
+#modal{
+    background-color: #0000002c;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    display: none;
+    position: fixed;
+}
+
+#modal #content{
+    padding: 1vw;
+    color: black;
+    position: relative; 
+    background-color: #EEEEEE;
+    top: 30vh;
+    width: 30vw;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1vh;
+    margin: 0% auto;
+    font-size: 1vw;
+}
+
+#exit{
+    padding: 0.2vw 0.65vw;
+    border-radius: 50px;
+    background-color: rgb(255, 1, 1);
+    cursor: pointer;
+    color: white;
+} 
